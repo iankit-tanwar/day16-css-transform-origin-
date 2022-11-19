@@ -1,0 +1,43 @@
+.parent{
+    width: 400px;
+    height: 400px;
+    background: red;
+    border: 10px solid #000;
+    margin: 160px auto ;
+    position: relative;
+}
+.parent .child{
+    width: 200px;
+    height: 200px;
+    transition: all 2s linear;
+    transform:rotate(0deg) ;
+
+}
+.parent:hover .child1,.parent:hover .child2,.parent:hover .child3,.parent:hover .child4{
+    transform: rotate(360deg);
+}
+.parent .child1{
+   
+    background: green;
+    transform-origin: left top ;
+    }
+
+.parent .child2{
+   
+    background: blue;
+    transform-origin: left bottom ;
+    }
+.parent .child3{
+    background: purple;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform-origin: top right ;
+}
+.parent .child4{
+    background:violet;
+    position: absolute;
+    right: 0px;
+    bottom:  0px;
+    transform-origin: bottom right;
+}
